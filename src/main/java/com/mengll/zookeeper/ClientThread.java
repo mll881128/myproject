@@ -49,7 +49,7 @@ public class ClientThread extends Thread{
                 System.out.println(serverName+"exception,"+e.getLocalizedMessage());  
                 try {  
                     operationCient= new ServerConnector();  
-                    operationCient.init("127.0.0.1:2181","newServer1");  
+                    operationCient.init("192.168.137.100:2181","newServer1");  
                 } catch (IOException e1) {  
                     // TODO Auto-generated catch block  
                     System.out.println(serverName+" reconnect  exception,"+e.getLocalizedMessage());  

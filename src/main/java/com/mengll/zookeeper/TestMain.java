@@ -13,24 +13,24 @@ public class TestMain {
          * 7、kill掉client3的线程，然后检查是watcher是否有通知给client1和client2 
          */  
           
-         Thread t1= new ClientThread("127.0.0.1:2181","server1",false);  
-         Thread t2= new ClientThread("127.0.0.1:2182","server2",false);  
-         Thread t3= new ClientThread("127.0.0.1:2183","server3",false);  
-         Thread t4= new ClientThread("127.0.0.1:2181","server4",false);  
-           
+         Thread t1= new ClientThread("192.168.137.100:2181","server1",false);  
+//         Thread t2= new ClientThread("127.0.0.1:2182","server2",false);  
+//         Thread t3= new ClientThread("127.0.0.1:2183","server3",false);  
+//         Thread t4= new ClientThread("127.0.0.1:2181","server4",false);  
+//           
          t1.start();  
-         t2.start();  
-         t3.start();  
-         t4.start();  
-         ControlThread c = new ControlThread(t1, t2, t3, t4);  
-         c.start();  
-         int i=0;  
-         while(true)  
-         {  
-            i++;  
-            i--;  
-               
-         }  
+//         t2.start();  
+//         t3.start();  
+//         t4.start();  
+//         ControlThread c = new ControlThread(t1, t2, t3, t4);  
+//         c.start();  
+//         int i=0;  
+//         while(true)  
+//         {  
+//            i++;  
+//            i--;  
+//               
+//         }  
            
          /* 
           * 测试控制台输出： 

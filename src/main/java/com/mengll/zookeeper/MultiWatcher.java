@@ -24,10 +24,10 @@ public class MultiWatcher implements Watcher{
         if(connectAddress!=null){  
             outputStr+="connectIP:"+connectAddress;  
         }  
+      System.out.println(event);
         outputStr+=",path:"+event.getPath();  
         outputStr+=",state:"+event.getState();  
         outputStr+=",type:"+event.getType();  
-          
-        System.out.println(outputStr);  
+      System.out.println(outputStr);  
     }  
 }  
